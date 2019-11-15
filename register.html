@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Register</title>
+<style>
+p
+{
+color:yellow;
+}
+</style>
+<script>
+
+function valid()
+{
+	var a=document.getElementById("t1").value;
+	var b=/^[a-z|A-Z]{1,20}$/;	
+
+	var c=document.getElementById("t2").value;
+	var d=/^[a-z|A-Z]{1,20}$/;	
+	
+	var e=document.getElementById("t3").value;
+	var f=/^[0-9]{10}$/;
+	
+	var g=document.getElementById("t4").value;
+	var h=/^[a-z|A-Z|0-9]{5,20}\@[a-z|A-Z]{5,20}\.[a-z]{2,3}$/; 	
+	
+	if(a.match(b)&&c.match(d)&&e.match(f)&&g.match(h)) {alert("Credentials valid:   redirecting to the desired page!");}
+	else if(a==""||c==""||e==""||g=="") {alert("Text fields are empty!");}
+	else {alert("Credentials are invalid!\nHint:   try to follow the rules.");}
+}
+function pass()
+{
+	var x=document.getElementById("pa").value;
+	if(x.length<8){alert("password too short");}
+}
+</script>
+</head>
+<body align="center" style="background-color:black;color:yellow">
+<h1 style="font-size:50px;">REGISTER</h1>
+<table align="center" cellpadding="10" style="color:white;background-color:black;">
+<form action=" " method="get">
+<tr>
+<td>First Name:</td><td>
+<input type="text" id="t1"s>
+</td>
+</tr>
+<tr>
+<td>Last Name:</td><td>
+<input type="text" id="t2">
+</td>
+</tr>
+<tr>
+<td>
+Phone no:</td><td>
+<input type="text" id="t3">
+</td>
+</tr>
+<tr>
+<td>Email-id:</td><td>
+<input type="text" id="t4"></td><td><p>(Ex:abcdfj@gmail.com)</p>
+</td>
+</tr>
+<tr>
+<td>Password:</td><td>
+<input type="password" onblur="pass()" id="pa">
+</td>
+</tr>
+<tr>
+<td>Re-enter Password:</td><td>
+<input type="password" id="rpa">
+</td>
+</tr>
+<tr >
+<td align="center" colspan="2" >
+<input type="Submit" onclick="valid()">
+</td>
+</tr>
+</form>
+</table>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+<servlet>
+	<servlet-name>Wt1</servlet-name>
+	<servlet-class>Wt1</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Wt1</servlet-name>
+	<url-pattern>/Wt1</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>Wt2</servlet-name>
+	<servlet-class>Wt2</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Wt2</servlet-name>
+	<url-pattern>/Wt2</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>Wt3</servlet-name>
+	<servlet-class>Wt3</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Wt3</servlet-name>
+	<url-pattern>/Wt3</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>Wt4</servlet-name>
+	<servlet-class>Wt4</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Wt4</servlet-name>
+	<url-pattern>/Wt4</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>Wt5</servlet-name>
+	<servlet-class>Wt5</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Wt5</servlet-name>
+	<url-pattern>/Wt5</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>Wt6</servlet-name>
+	<servlet-class>Wt6</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Wt6</servlet-name>
+	<url-pattern>/Wt6</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>Wt8</servlet-name>
+	<servlet-class>Wt8</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Wt8</servlet-name>
+	<url-pattern>/Wt8</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>Mailer</servlet-name>
+	<servlet-class>Mailer</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Mailer</servlet-name>
+	<url-pattern>/Mailer</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>Mailer$1</servlet-name>
+	<servlet-class>Mailer$1</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Mailer$1</servlet-name>
+	<url-pattern>/Mailer$1</url-pattern>
+</servlet-mapping>
+
+<filter>
+	<filter-class>Wt7</filter-class>
+	<filter-name>Wt7</filter-name>
+</filter>
+<filter-mapping>
+	<filter-name>Wt7</filter-name>
+	<url-pattern>/*</url-pattern>
+</filter-mapping>
+</web-app>

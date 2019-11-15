@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Login</title>
+<script>
+function valid()
+{
+	var x=document.getElementById("t1").value;
+	var y=/^[a-z|A-Z|0-9]{5,20}\@[a-z|A-Z]{5,20}\.[a-z]{2,3}$/;
+	if(x.match(y)) {alert("Credentials valid:   redirecting to the desired page!");}
+	else if(x=="") {alert("Text fields are empty!");}
+	else {alert("Username is invalid!\nHint:   Username is your Email-Id.");}
+}
+</script>
+</head>
+<body align="center" style="background-color:black;color:yellow">
+<h1 style="font-size:50px;">LOGIN</h1>
+<table align="center" cellpadding="10" style="color:white;background-color:black;">
+<form action=" " method="get">
+<tr>
+<td>Username:</td><td>
+<input type="text" id="t1">
+</td>
+</tr>
+<tr>
+<td>
+Password:</td><td>
+<input type="password" name="password">
+</td>
+</tr>
+<tr >
+<td align="center" colspan="2" >
+<input type="Submit" onclick="valid()">
+</td>
+</tr>
+</form>
+</table>
+<p id="p1" style="color:yellow;"></p>
+</body>
+</html>
